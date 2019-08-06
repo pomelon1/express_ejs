@@ -1,0 +1,178 @@
+<!--<!DOCTYPE html>-->
+
+<!--<html>-->
+
+<!--<head>-->
+
+<!--    <meta charset="UTF-8">-->
+
+<!--    <title>123555123</title>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<form id= "form1" action = "login.html" method = "get">-->
+
+<!--    姓名：<input type = 'text' name = "name" value =""><br/>-->
+
+<!--&lt;!&ndash;    年龄：<input type = "number" name = "age" value ="25">&ndash;&gt;-->
+
+<!--    <input type = "submit" value =" 提交"/>-->
+
+<!--</form>-->
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+<!--    <link rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--<script src="/jquery-3.3.1.min.js"></script>-->
+    <!--<script src="/bootstrap.css"></script>-->
+    <!-- <script src="/bootstrap.js"></script>-->
+    <script src="/myapp/public/css/bootstrap.min.css"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <!--  <script src="/bootstrap.min.js"></script>-->
+    <!--<script src="/jquery.min.js"></script>-->
+    <style type="text/css">
+        html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans',sans-serif;
+            margin: 0;
+            background-color: #4A374A;
+        }
+        #login{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        #login h1{
+            color: #fff;
+            text-shadow:0 0 20px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        h1{
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+            text-shadow:1px 1px 1px;
+            border: 1px solid #312E3D;
+            border-bottom-color: #56536A;
+            border-radius: 4px;
+            background-color: #2D2D3F;
+        }
+        .but{
+            width: 300px;
+            min-height: 20px;
+            display: block;
+            background-color: #4a77d4;
+            border: 1px solid #3762bc;
+            color: #fff;
+            padding: 9px 14px;
+            font-size: 15px;
+            line-height: normal;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        video{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            width: auto;
+            /*加滤镜*/
+            /*-webkit-filter: grayscale(100%);*/
+            /*filter:grayscale(100%);*/
+            z-index:-11
+        }
+        source{
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+<video autoplay loop muted>
+    <source src="../views/VID.mp4" type="video/mp4"  />
+    Your browser does not support the video tag.
+</video>
+
+<div id="login">
+    <h1>登录</h1>
+    <form method="get" action="login.html">
+        <input type="text" class="user"  required="required" placeholder="用户名" name="name"/>
+        <input type="password" class="pwd" required="required" placeholder="密码" name="p">
+        <button class="but" type="submit">登录</button>
+    </form>
+    <div id="error"></div>
+</div>
+</body>
+<script>
+    var oUname = document.querySelector(".user");
+    var oUpass = document.getElementById(".pwd");
+    var oError = document.getElementById("error");
+    var oButton = document.querySelector(".but");
+    var isError = true;
+    /*      if (oUname.value.length > 20 || oUname.value.length < 6) {
+              oError.innerHTML = "请输入6-20位用户名";
+              isError = false;
+              return;
+          }else if((oUname.value.charCodeAt(0)>=48) && (oUname.value.charCodeAt(0)<=57)){
+              oError.innerHTML = "首字符必须为字母";
+              return;
+          }else for(var i=0;i<oUname.value.charCodeAt(i);i++){
+              if((oUname.value.charCodeAt(i)<48)||(oUname.value.charCodeAt(i)>57) && (oUname.value.charCodeAt(i)<97)||(oUname.value.charCodeAt(i)>122)){
+                  oError.innerHTML = "必须为字母跟数字组成";
+                  return;
+              }
+          }
+
+
+          if (oUpass.value.length > 20 || oUpass.value.length < 6) {
+              oError.innerHTML = "密码请输入6-20位字符";
+              isError = false;
+              return;
+          }
+  */
+    oButton.onclick=function () {
+        if(oUname.value===123&&oUpass.value===123){
+            window.alert("登录成功")
+        }
+
+    };
+
+</script>
+</html>
