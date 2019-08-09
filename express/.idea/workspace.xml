@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74456f5d-836b-4c7f-a92a-cacfb8d8590b" name="Default Changelist" comment="" />
+    <list default="true" id="74456f5d-836b-4c7f-a92a-cacfb8d8590b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/hahaha.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/db/DBConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hahaha/db/usersql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/qq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/routes/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/routes/person.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/views/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/views/person.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssx/myapp/views/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled5/db/DBConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +48,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -93,6 +118,7 @@
       <workItem from="1565010242192" duration="422000" />
       <workItem from="1565013139288" duration="8842000" />
       <workItem from="1565053537133" duration="275000" />
+      <workItem from="1565080862659" duration="108000" />
     </task>
     <task id="LOCAL-00001">
       <created>1565053632279</created>
@@ -119,7 +145,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
