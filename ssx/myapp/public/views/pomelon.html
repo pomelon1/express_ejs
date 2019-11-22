@@ -63,7 +63,7 @@
         var data=JSON.parse(j);
         $.ajax(
             {
-                url:'127.0.0.1:8101',
+                url:'127.0.0.1:8101/login.html',
                 type: "POST",
                 data:data,
                 dataType: "json",
@@ -71,10 +71,10 @@
 
                 success: function(data){
                     document.getElementById('username1').innerHTML=j.nicheng;
-
+                    document.getElementById('username1').innerHTML=j.school;
 
                 },
-                error:function(err){          }
+                error:function(err){     alert("no  ok");     }
 
             }
         )

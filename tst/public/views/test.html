@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<p id="top">天津职业技术师范大学</p>
+<textarea id="exchage" rows="3" cols="20"></textarea>
+<textarea id="exchage1" rows="3" cols="20"></textarea>
+<button id="ok" onclick="a()">确定</button>
+
+<div style="background-color: antiquewhite">
+    <textarea id="b123"></textarea>
+    <button id="ok1" onclick="b()">确定</button>
+    <p id="789"></p>
+</div>
+</body>
+<script>
+    function a(){
+        var data={};
+        data.nm=document.getElementById('exchage').innerHTML;
+        data.sc=document.getElementById('exchage1').innerHTML;
+        // var str = '{"name":"LeonWu","age":"18"}'
+        var a=JSON.stringify(data);
+        console.log(data);
+        $.ajax(
+            {
+                url: 'http://127.0.0.1:8102/',
+                type: "POST",
+                data: a,
+                dataType: "json",
+                success: function (data) {
+                    alert(data);
+                    document.getElementById('top').innerHTML = "姓名是" + data.nm + "\n";
+                    document.getElementById('top').innerHTML += "姓名是" + data.sc + '\n';
+
+                },
+                error: function (err) {
+                    alert("no  ok");
+                }
+
+            })}
+
+</script>
+</html>

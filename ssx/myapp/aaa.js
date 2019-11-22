@@ -8,15 +8,27 @@ var url=require('url');
 var ejs = require('ejs');//定义变量
 var bodyParser=require('body-parser');
 var router = express.Router();
+var server=http.createServer();
+var querystring = require("querystring");
 app.use(express.static('wwwroot'));
+
 // web.use(bodyParser.urlencoded({extended:false}));
 // import  express from 'express';
 // import  bodyParser from 'body-parser';
 // const app = express();
 
-var imp;
+var imp={};
 var postimp;
 
+// server.on("request",function(req,res){
+
+    // var urlStr=url.parse(req.url);
+    //
+    // console.log(querystring.parse(urlStr.query))
+
+
+
+// })
 
 app.use(express.static(__dirname+"/public"));
 //设置模板视图的目录
@@ -32,30 +44,34 @@ app.set("view engine","html");//设置路由
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-fs.readFile('public/javascripts/right', function (err, data) {
-    console.log(data);
-    console.log(err);
-    var ha=JSON.parse(data);
-    console.log(ha);
-    imp=ha.p;
-    console.log(imp.length);
-    console.log(imp);
-    console.log(imp[0].name);
-    // console.log(ha.p[1].name);
-
-
-
-})
+// fs.readFile('public/javascripts/right', function (err, data) {
+//     console.log(data);
+//     console.log(err);
+//     var ha=JSON.parse(data);
+//     console.log(ha);
+//     imp=ha.p;
+//     console.log(imp.length);
+//     console.log(imp);
+//     console.log(imp[0].name);
+//     // console.log(ha.p[1].name);
+//
+//
+//
+// })
 http.createServer(app).listen(8101,function(req,res) {
 
     console.log("服务器地址为:http://localhost:8101");
     app.get("/", function (req, res) {
-        res.render("ssss.html")
-        ;
+        res.render("s.html");
+
     })
 
 // get方法
 //     app.get("/login.html", (req, res) => {
+//         var urlStr=url.parse(req.url);
+//         console.log(querystring.parse(urlStr.query));
+//         console.log("asfsafas"+urlStr);
+//         console.log("878979"+urlStr.query);
 //         console.log(111);
 //         for (var i = 0; i < imp.length; i++) {
 //             if (imp[i].name === req.query.username && imp[i].password === req.query.password) {   //呈递页面渲染
@@ -74,42 +90,42 @@ http.createServer(app).listen(8101,function(req,res) {
 //             }
 //         }
 //     })
-    // //post方router法
-    app.post('/login.html', function(req, res, next) {
-        // 获取参数
-        var query = req.body;
-        console.log("post请求：参数", query);
-        console.log("post请求：参数", query.username);
-        console.log("post请求：参数", query.password);
-        for (var i = 0; i < imp.length; i++) {
-            if (imp[i].name === query.username&& imp[i].password === query.password ){   //呈递页面渲染
-                // console.log(sname[i].username+sname[i].password);
-                // if (req.query.username === imp[1].name) {
-                    res.render("pomelon.html", {
-                        "title": query.username,
-                        "tv": "《跑男》",
-                        "sex": "女"
-                    });}}
-                // } else if (req.query.username === imp[0].name) {
-                //     res.render("nicole.html", {
-                //         "title": req.query.username,
-                //     });
-                // }
-            // }
-        // }
-    // })
-        // res.render('o.html');
-    });
-
-
-    // app.post("/login.html", function (req, res) {
-    //     console.log(req.body.name);
-    //     console.log(req.body.password);
-    //     res.render('o.html')
-    //      console.log(req.body);})
-    //     // res.render('login.html', {
-        //     name: '111'
-        // });
-    // })
+//     // // //post方router法
+//     // app.post('/login.html', function(req, res, next) {
+//     //     // 获取参数
+//     //     var query = req.body;
+//     //     console.log("post请求：参数", query);
+//     //     console.log("post请求：参数", query.username);
+//     //     console.log("post请求：参数", query.password);
+//     //     for (var i = 0; i < imp.length; i++) {
+//     //         if (imp[i].name === query.username&& imp[i].password === query.password ){   //呈递页面渲染
+//     //             // console.log(sname[i].username+sname[i].password);
+//     //             // if (req.query.username === imp[1].name) {
+//     //                 res.render("pomelon.html", {
+//     //                     "title": query.username,
+//     //                     "tv": "《跑男》",
+//     //                     "sex": "女"
+//     //                 });}}
+//     //             // } else if (req.query.username === imp[0].name) {
+//     //             //     res.render("nicole.html", {
+//     //             //         "title": req.query.username,
+//     //             //     });
+//     //             // }
+//     //         // }
+//     //     // }
+//     // // })
+//     //     // res.render('o.html');
+//     // });
+//
+//
+//     // app.post("/login.html", function (req, res) {
+//     //     console.log(req.body.name);
+//     //     console.log(req.body.password);
+//     //     res.render('o.html')
+//     //      console.log(req.body);})
+//     //     // res.render('login.html', {
+//         //     name: '111'
+//         // });
+//     // })
 
 })

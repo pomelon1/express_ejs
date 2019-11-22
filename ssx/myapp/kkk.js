@@ -38,7 +38,7 @@ app.use(cookieParser('sessiontest'));
 app.use(session({
     cookieName: 'session',
     secret: 'random_string_goes_here',
-    duration: 60,
+    duration: 600,
     activeDuration: 5 * 60 * 1000,
 }));
 
@@ -58,7 +58,6 @@ app.use(session({
 //
 // })
 http.createServer(app).listen(8101,function(req,res) {
-
     console.log("服务器地址为:http://localhost:8101");
     app.get("/", function (req, res) {
         if(req.session.user){
@@ -73,14 +72,13 @@ http.createServer(app).listen(8101,function(req,res) {
         }else{
             res.render('ssss.html');
         }
-        // res.render("ssss.html")
-        ;
+
     })
     // //post方router法
     // function po(){
-    app.post('/login.html', function(req, res, next) {
-        // 获取参数
-
+    app.get('/login.html', function(req, res, next) {
+        // 获取参
+        console.log("ssssssssssssssssssssssssssssssss");
         var query = req.body;
         var user={
             name:query.username,
@@ -131,7 +129,7 @@ function getUserInfor(name, pass, callback) {
 
     connection.connect();
 
-    var  sql = 'SELECT * FROM  user';
+    var  sql = 'SELECT * FROM  user where name="pomelon"';
 //查
     connection.query(sql,function (err, result) {
         if(err){
