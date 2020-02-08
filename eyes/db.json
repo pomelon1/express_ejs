@@ -1,0 +1,85 @@
+{
+  "Login": {
+    "phone": "17725325867",
+    "code": "7894536",
+    "state": "T",
+    "id": "01348"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-ser",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "12",
+      "title": "散散心",
+      "author": "ssx"
+    },
+    {
+      "id": "5",
+      "title": "散散心",
+      "author": "ssx"
+    },
+    {
+      "id": "408ERUF"
+    },
+    {
+      "id": "QCi7JB6"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Send": {
+    "phone": "17725325867",
+    "state": "T"
+  },
+  "Create": {
+    "school_name": "111",
+    "Classroom _ID": "111",
+    "invitationcode": "XDDFCFRGTRGERWFQERAEFGWETRGETREREFAVERGRTHYHERTSGERGERVEGRHGTYJYHY"
+  },
+  "Add": {
+    "invitationcode": "123123",
+    "school_name": "school_name",
+    "Classroom_ID": "Classroom_ID"
+  },
+  "Upload_information": {
+    "id": "01348",
+    "myopia_left": "4536",
+    "myopia_right": "123",
+    "disease1": "F",
+    "disease2": "F",
+    "state": "T"
+  },
+  "Exit": {
+    "id": "01348",
+    "school_name": "计科1711",
+    "Classroom _ID": "",
+    "deleteall": "F",
+    "state": "T"
+  }
+}
